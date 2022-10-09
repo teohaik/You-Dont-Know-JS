@@ -1,0 +1,19 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:mime:20170907':
+    - forever > winston > request > mime:
+        patched: '2022-10-09T22:30:42.651Z'
+    - forever > winston > request > form-data > mime:
+        patched: '2022-10-09T22:30:42.651Z'
+  'npm:minimatch:20160620':
+    - grunt-forever > forever > forever-monitor > minimatch:
+        patched: '2022-10-09T22:30:42.651Z'
+  'npm:qs:20140806-1':
+    - forever > winston > request > qs:
+        patched: '2022-10-09T22:30:42.651Z'
+  'npm:request:20160119':
+    - forever > winston > request:
+        patched: '2022-10-09T22:30:42.651Z'
